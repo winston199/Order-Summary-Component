@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /*### Neutral*/
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Pale-blue);
+
+}
+
+
+p{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    padding: 5px 30px;
+}
+
+h1{
+    font-weight: 900;
+    padding: 1rem;
+
+}
+
+button{
+    font: inherit;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding-bottom: 1rem;
+    box-shadow: 3px 3px 3px hsl(223, 47%, 23%, 0.15);
+    
+}
+
+.container .main-img img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.container .pricing{
+    margin: 20px auto;
+    background-color: var(--Very-pale-blue);
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.container .pricing article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pricing article img{
+    margin-right: -15px;
+}
+
+.btn-change{
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--Bright-blue);
+}
+
+.btn-change:hover{
+    color: var(--Pale-blue);
+}
+.btn-primary{
+    background-color: var(--Bright-blue);
+    color: #fff;
+    padding: 0.8rem;
+    margin: 15px 30px;
+}
+.btn-primary:hover {
+    color: var(--Pale-blue);
+}
+
+.btn-seconary{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+    margin: 15px auto;
+}
+
+.btn-seconary:hover{
+    color: var(--Pale-blue);
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width:500px){
+    .container{
+        width: 375px;
+    }
+}
